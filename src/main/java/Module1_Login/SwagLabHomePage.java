@@ -9,7 +9,8 @@ public class SwagLabHomePage
 	//step1: declaration
 	@FindBy(xpath = "//div[@class='app_logo']")  private WebElement logo;
 	@FindBy(xpath = "//button[@id='react-burger-menu-btn']") private WebElement openMenu;
-	
+	@FindBy(xpath = "//a[@id='item_2_title_link']") private WebElement onesieProduct;
+	@FindBy(xpath = "(//div[@class='inventory_item_price'])[5]") private WebElement onesieProductPrice;
 	
 	//step2: initialization
 	public SwagLabHomePage(WebDriver driver)
@@ -17,19 +18,6 @@ public class SwagLabHomePage
 		PageFactory.initElements(driver, this);
 	}
 	
-	//step3:
-//	public void verifySwagLabHomePageLogo(String expLogoText) 
-//	{
-//		String actLogoText = logo.getText();
-//		if (actLogoText.equals(expLogoText))
-//		{
-//			System.out.println("Pass");
-//		} 
-//		else 
-//		{
-//			System.out.println("Fail");
-//		}
-//	}
 	
 	
 	public String getSwagLabHomePageLogoText() 
@@ -41,6 +29,23 @@ public class SwagLabHomePage
 	public void clickSwagLabHomePageOpenMenu() 
 	{
 		openMenu.click();
+	}
+	
+	
+	public String getSwagLabHomePageOnesieProduct()
+	{
+		String actText = onesieProduct.getText();
+		return actText;
+	}
+	
+	public double getSwagLabHomePageOnesieProductPrice()
+	{
+		String productPrice = onesieProductPrice.getText();  //  $7.99 
+		productPrice=productPrice.substring(1);               //7.99
+		
+		double PriceInDouble = Double.parseDouble(productPrice);    //String -> Double
+		
+		return PriceInDouble;
 	}
 
 }
