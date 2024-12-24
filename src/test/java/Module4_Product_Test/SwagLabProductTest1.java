@@ -15,12 +15,14 @@ import LibraryFiles.UtilityClass;
 import Module1_Login.SwagLabHomePage;
 import Module1_Login.SwagLabLoginPage;
 import Module1_Login.SwagLabOpenMenuPage;
+import Module4_Product.SwagLabProductPage;
 
-public class SwagLabProductTest extends BaseClass
+public class SwagLabProductTest1 extends BaseClass
 {
 	SwagLabLoginPage login;
 	SwagLabHomePage home;
 	SwagLabOpenMenuPage openMenu;
+	SwagLabProductPage product;
 	int TCID;
 	
 	@BeforeClass
@@ -31,6 +33,7 @@ public class SwagLabProductTest extends BaseClass
 		login=new SwagLabLoginPage(driver);  
 		home=new SwagLabHomePage(driver);
 		openMenu=new SwagLabOpenMenuPage(driver);
+		product=new SwagLabProductPage(driver);
 	}
 	
 	@BeforeMethod
@@ -44,47 +47,19 @@ public class SwagLabProductTest extends BaseClass
 
 	
 	@Test(priority = 1)
-	public void verifyProductName() throws EncryptedDocumentException, IOException 
+	public void verifyAddToCartFeature() throws EncryptedDocumentException, IOException, InterruptedException 
 	{
-		TCID=102;
-		String actProductName = home.getSwagLabHomePageOnesieProduct();
-		String expProductName=UtilityClass.getTD(1, 0);
-		Assert.assertEquals(actProductName, expProductName,"Failed TC2-act & exp ProductName mis match    :");
+		Thread.sleep(2000);
+		home.clickSwagLabHomeAnySpecificProduct(UtilityClass.getTD(5, 0));
+		Thread.sleep(2000);
+		product.clickSwagLabProductPageAddToCartBtn();
+		Thread.sleep(2000);
+		boolean actResult = product.getSwagLabProductPageDisplayed();
+		Assert.assertTrue(actResult,"Failed-");
 	}
 	
 	
 
-	@Test(priority = 2)
-	public void verifyProductPrice() throws EncryptedDocumentException, IOException 
-	{
-		TCID=103;
-		double actProductPrice = home.getSwagLabHomePageOnesieProductPrice();
-		double expProductPrice=UtilityClass.getTDDouble(2, 0);
-		
-		Assert.assertEquals(actProductPrice, expProductPrice,"Failed TC3-act & exp ProductPrice mis match    :");
-	}
-	
-	
-	@Test(priority = 3)
-	public void verifyAllProductSize() throws EncryptedDocumentException, IOException 
-	{
-		TCID=104;
-		int actProductSize = home.getSwagLabHomePageAllProductSize();
-		int expProductSize=(int)UtilityClass.getTDDouble(3, 0);   //convert double to int
-		
-		Assert.assertEquals(actProductSize, expProductSize,"Failed TC4-act & exp All ProductSize mismatch    :");
-	}
-	
-	
-	@Test(priority = 4)
-	public void verifyAllProductPriceSum() throws EncryptedDocumentException, IOException 
-	{
-		
-		double actProductPriceSum = home.getSwagLabHomePageAllProductPriceSum();
-		double expProductPriceSum=  UtilityClass.getTDDouble(4, 0);
-		
-		Assert.assertEquals(actProductPriceSum, expProductPriceSum,"Failed TC5-act & exp All Product Price Sum mismatch    :");
-	}
 	
 	
 	
