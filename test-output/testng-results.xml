@@ -1,40 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-24T08:14:45 IST" name="Default suite" finished-at="2024-12-24T08:15:00 IST" duration-ms="15278">
+  <suite started-at="2024-12-26T08:04:26 IST" name="SwagLabLoginTest" finished-at="2024-12-26T08:05:04 IST" duration-ms="37222">
     <groups>
     </groups>
-    <test started-at="2024-12-24T08:14:45 IST" name="Default test" finished-at="2024-12-24T08:15:00 IST" duration-ms="15278">
-      <class name="Module4_Product_Test.SwagLabProductTest1">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:Module4_Product_Test.SwagLabProductTest1@30c15d8b]" started-at="2024-12-24T08:14:45 IST" name="openBrowser" finished-at="2024-12-24T08:14:47 IST" duration-ms="1928" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Module4_Product_Test.SwagLabProductTest1@30c15d8b]" started-at="2024-12-24T08:14:47 IST" name="loginToApp" finished-at="2024-12-24T08:14:49 IST" duration-ms="2327" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="verifyAddToCartFeature()[pri:1, instance:Module4_Product_Test.SwagLabProductTest1@30c15d8b]" started-at="2024-12-24T08:14:49 IST" name="verifyAddToCartFeature" finished-at="2024-12-24T08:14:56 IST" duration-ms="6642" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddToCartFeature -->
-        <test-method is-config="true" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:Module4_Product_Test.SwagLabProductTest1@30c15d8b]" started-at="2024-12-24T08:14:56 IST" name="logoutFromApp" finished-at="2024-12-24T08:15:00 IST" duration-ms="4144" status="PASS">
+    <test started-at="2024-12-26T08:04:26 IST" name="Test3_firefox" finished-at="2024-12-26T08:05:00 IST" duration-ms="33377">
+      <class name="Module4_Product_Test.SwagLabOrderProductTest">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Module4_Product_Test.SwagLabOrderProductTest@6f03482]" started-at="2024-12-26T08:04:26 IST" name="openBrowser" finished-at="2024-12-26T08:04:32 IST" duration-ms="5246" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAddToCartFeature status=SUCCESS method=SwagLabProductTest1.verifyAddToCartFeature()[pri:1, instance:Module4_Product_Test.SwagLabProductTest1@30c15d8b] output={null}]]]>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Module4_Product_Test.SwagLabOrderProductTest@6f03482]" started-at="2024-12-26T08:04:32 IST" name="loginToApp" finished-at="2024-12-26T08:04:34 IST" duration-ms="2412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="orderAnySpecificProduct()[pri:1, instance:Module4_Product_Test.SwagLabOrderProductTest@6f03482]" started-at="2024-12-26T08:04:34 IST" name="orderAnySpecificProduct" finished-at="2024-12-26T08:04:53 IST" duration-ms="19177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderAnySpecificProduct -->
+        <test-method is-config="true" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:Module4_Product_Test.SwagLabOrderProductTest@6f03482]" started-at="2024-12-26T08:04:53 IST" name="logoutFromApp" finished-at="2024-12-26T08:04:58 IST" duration-ms="4498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderAnySpecificProduct status=SUCCESS method=SwagLabOrderProductTest.orderAnySpecificProduct()[pri:1, instance:Module4_Product_Test.SwagLabOrderProductTest@6f03482] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Module4_Product_Test.SwagLabProductTest1@30c15d8b]" started-at="2024-12-24T08:15:00 IST" name="closeBrowser" finished-at="2024-12-24T08:15:00 IST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Module4_Product_Test.SwagLabOrderProductTest@6f03482]" started-at="2024-12-26T08:04:58 IST" name="closeBrowser" finished-at="2024-12-26T08:05:00 IST" duration-ms="2001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- Module4_Product_Test.SwagLabProductTest1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Module4_Product_Test.SwagLabOrderProductTest -->
+    </test> <!-- Test3_firefox -->
+    <test started-at="2024-12-26T08:04:26 IST" name="Test1_chrome" finished-at="2024-12-26T08:05:00 IST" duration-ms="33997">
+      <class name="Module4_Product_Test.SwagLabOrderProductTest">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Module4_Product_Test.SwagLabOrderProductTest@36fc695d]" started-at="2024-12-26T08:04:26 IST" name="openBrowser" finished-at="2024-12-26T08:04:34 IST" duration-ms="7453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Module4_Product_Test.SwagLabOrderProductTest@36fc695d]" started-at="2024-12-26T08:04:34 IST" name="loginToApp" finished-at="2024-12-26T08:04:36 IST" duration-ms="2353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="orderAnySpecificProduct()[pri:1, instance:Module4_Product_Test.SwagLabOrderProductTest@36fc695d]" started-at="2024-12-26T08:04:36 IST" name="orderAnySpecificProduct" finished-at="2024-12-26T08:04:54 IST" duration-ms="18307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderAnySpecificProduct -->
+        <test-method is-config="true" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:Module4_Product_Test.SwagLabOrderProductTest@36fc695d]" started-at="2024-12-26T08:04:54 IST" name="logoutFromApp" finished-at="2024-12-26T08:04:59 IST" duration-ms="4402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderAnySpecificProduct status=SUCCESS method=SwagLabOrderProductTest.orderAnySpecificProduct()[pri:1, instance:Module4_Product_Test.SwagLabOrderProductTest@36fc695d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Module4_Product_Test.SwagLabOrderProductTest@36fc695d]" started-at="2024-12-26T08:04:59 IST" name="closeBrowser" finished-at="2024-12-26T08:05:00 IST" duration-ms="1455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Module4_Product_Test.SwagLabOrderProductTest -->
+    </test> <!-- Test1_chrome -->
+    <test started-at="2024-12-26T08:04:26 IST" name="Test2_chrome" finished-at="2024-12-26T08:05:04 IST" duration-ms="37222">
+      <class name="Module4_Product_Test.SwagLabOrderProductTest">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:Module4_Product_Test.SwagLabOrderProductTest@1e800aaa]" started-at="2024-12-26T08:04:26 IST" name="openBrowser" finished-at="2024-12-26T08:04:39 IST" duration-ms="12302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Module4_Product_Test.SwagLabOrderProductTest@1e800aaa]" started-at="2024-12-26T08:04:39 IST" name="loginToApp" finished-at="2024-12-26T08:04:41 IST" duration-ms="2692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="orderAnySpecificProduct()[pri:1, instance:Module4_Product_Test.SwagLabOrderProductTest@1e800aaa]" started-at="2024-12-26T08:04:41 IST" name="orderAnySpecificProduct" finished-at="2024-12-26T08:04:59 IST" duration-ms="17655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderAnySpecificProduct -->
+        <test-method is-config="true" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:Module4_Product_Test.SwagLabOrderProductTest@1e800aaa]" started-at="2024-12-26T08:04:59 IST" name="logoutFromApp" finished-at="2024-12-26T08:05:03 IST" duration-ms="4278" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=orderAnySpecificProduct status=SUCCESS method=SwagLabOrderProductTest.orderAnySpecificProduct()[pri:1, instance:Module4_Product_Test.SwagLabOrderProductTest@1e800aaa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Module4_Product_Test.SwagLabOrderProductTest@1e800aaa]" started-at="2024-12-26T08:05:03 IST" name="closeBrowser" finished-at="2024-12-26T08:05:04 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Module4_Product_Test.SwagLabOrderProductTest -->
+    </test> <!-- Test2_chrome -->
+  </suite> <!-- SwagLabLoginTest -->
 </testng-results>
