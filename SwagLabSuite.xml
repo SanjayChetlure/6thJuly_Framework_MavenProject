@@ -6,10 +6,12 @@
 		<listener class-name="Reports.ExtentReportListener"/>
 	</listeners>
 
-  <test  name="Test">
-  	<parameter name="browserName" value="chrome"/>
+  <test  name="Test">  
+  	<parameter name="browserName" value="edge"/>
     <classes>
       <class name="Module1_Login_Test.SwagLabLoginTest"/>
+      <class name="Module4_Product_Test.SwagLabProductTest"/>
+      <class name="Module4_Product_Test.SwagLabOrderProductTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

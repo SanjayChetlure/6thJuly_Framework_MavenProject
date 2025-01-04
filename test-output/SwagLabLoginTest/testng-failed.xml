@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [SwagLabLoginTest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1_edge(failed)">
+    <parameter name="browserName" value="edge"/>
+    <classes>
+      <class name="Module4_Product_Test.SwagLabOrderProductTest">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="openBrowser"/>
+          <include name="logoutFromApp"/>
+          <include name="closeBrowser"/>
+          <include name="orderAnySpecificProduct"/>
+        </methods>
+      </class> <!-- Module4_Product_Test.SwagLabOrderProductTest -->
+    </classes>
+  </test> <!-- Test1_edge(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2_chrome(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="Module4_Product_Test.SwagLabOrderProductTest">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="openBrowser"/>
+          <include name="logoutFromApp"/>
+          <include name="closeBrowser"/>
+          <include name="orderAnySpecificProduct"/>
+        </methods>
+      </class> <!-- Module4_Product_Test.SwagLabOrderProductTest -->
+    </classes>
+  </test> <!-- Test2_chrome(failed) -->
+</suite> <!-- Failed suite [SwagLabLoginTest] -->
